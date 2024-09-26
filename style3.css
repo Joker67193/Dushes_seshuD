@@ -1,0 +1,179 @@
+.light-theme {
+    background-color: white;
+    color: black;
+}
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.8s ease 0s;
+}
+#nav1{
+    margin-left: -1%;
+    margin-top: -11%;
+    background-color: rgba(255, 140, 0, 0.7);
+    position: fixed;
+    z-index: 10;
+    width: 101%;
+    height: 10%;
+}
+#themeButton{
+    margin-left: 35%;
+    border-radius: 10%;
+    transition: all 0.2s ease 0s;
+    box-shadow: 1px 1px 15px;
+}
+#nav li{
+    margin-right: 50px;
+}
+.link{
+    color: var(--link-color-light);
+    text-decoration: none;
+}
+.link:hover{
+    text-shadow: 1px 1px 5px;
+    transition: all 0.8s ease 0s;
+}
+.link1{
+    color: var(--link-color-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+.link1:hover{
+    text-shadow: 1px 1px 5px;
+    transition: all 0.8s ease 0s;
+}
+.active {
+    font-weight: bold;
+}
+#nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 150%;
+    margin-left: 24%;
+}
+
+main{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+#penis{
+    color: coral;
+    font-size: 350%;
+    text-shadow: 1px 1px 19px orange;
+}
+
+.About{
+    border: 4px solid;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+    overflow: auto;
+}
+
+#penis2{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#penis3{
+    margin-right: 1%;
+    margin-top: 3%;
+    font-size: 140%;
+    max-width: 100%;
+    text-align: center;
+}
+
+footer{
+    font-size: 160%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        font-size: 1.2em;
+    }
+
+    #themeButton {
+        margin-left: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    #nav li {
+        margin-right: 30px;
+    }
+
+    #penis {
+        font-size: 2.5em;
+    }
+
+    #penis2 {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    #penis3 {
+        font-size: 1.2em;
+    }
+
+    .About {
+        max-width: 90%;
+    }
+
+    footer {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav {
+        flex-direction: column;
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    #nav li {
+        margin: 0 10px 10px;
+    }
+
+    #themeButton {
+        width: 30px;
+        height: 30px;
+    }
+
+    #penis {
+        font-size: 2em;
+    }
+
+    #penis2 {
+        float: none;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    #penis3 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .About {
+        max-width: 100%;
+        padding: 10px;
+        border-width: 2px;
+    }
+
+    footer {
+        font-size: 1.2em;
+    }
+}
